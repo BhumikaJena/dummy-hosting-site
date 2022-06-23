@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+
+}
+#header{
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 0%;
+}
+#head{
+    background-color: rgba(117, 216, 252, 0.765);
+}
+i{
+    margin-top: 1%;
+    margin-right: 0.5%;
+}
+#logo{
+    margin-left: 2%;
+    width: 80px;
+    height: 24px;
+}
+#header p{
+    margin-top: 0.6%;
+    margin-right: 0.5%;
+}
+.navbar{
+    background-color: rgba(17, 17, 62, 0.952);
+}
+#image{
+    display: flex;
+    flex-direction: row;
+}
+#block{
+    width: 50%;
+    padding-top: 15%;
+    padding-left: 5%;
+}
+#btn{
+    margin-top: 5%;
+    font-size: medium;
+}
+#img{
+    background-image: url(https://media.coxhealth.com/images/RemoteWorkLG.2e16d0ba.fill-600x400.jpg);
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 30vw;
+    opacity: 100%;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px rgb(82, 81, 81);
+    font-size:1.3rem;
+}
+#cards{
+    display: flex;
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-right:8% ;
+    justify-content: space-between;
+}
+.card{
+    width: 18rem;
+}
+/* --------------------------------------------------------------------- */
+.flash{
+    background-image: url(https://wallpaperaccess.com/full/3539064.jpg);
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-size: cover;
+    width: 100%;
+}
+#flash h2{
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 4px 2px 4px #552ad4;
+}
+#flash p{
+    color: whitesmoke;
+    text-align: center;
+}
+#inflash{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    padding-top: 12%;
+}
+#flash button{
+     width: 12%;
+     margin-left:45%;
+     border-radius: 3%;
+     font-size: medium;
+}
+#footer{
+    background-color: rgba(90, 187, 222, 0.831);
+     margin-top: 3%;
+     padding-bottom: 0px;
+     margin-bottom: 0px;}
+
+#footer ul{
+    list-style-type: none;
+}
+#footer li{
+    color: aliceblue;
+}
+#ftop{
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    border-bottom-color: aliceblue;
+    border-bottom-style: solid;
+}
+.top{
+    padding-bottom: 2%;
+    font-weight:bold;
+    color: aliceblue;
+}
+#icons{
+    align-items: center;
+    margin-left: 45%;
+}
+#icons i{
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+#cr{
+    background-color: rgba(17, 17, 62, 0.952);
+    color: white;
+    font-size: x-small;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    text-align: center;
+}
+@media only screen and (max-width: 1025px) {
+    #block{
+        width: 50%;
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+    #cards{
+        display: flex;
+        padding-top: 5%;
+        padding-left: 3%;
+        padding-right:3% ;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 910px) {
+    #cards{
+        display: flex;
+        padding-top: 5%;
+        padding-left: 0.5%;
+        padding-right:0.5% ;
+        justify-content: space-between;
+    }
+    #flash button{
+        width: 17%;
+        margin-left:45%;
+        border-radius: 3%;
+   }
+}
+@media only screen and (max-width: 890px) {
+    #cards{
+        display: flex;
+        padding-top: 5%;
+        padding-left: 4%;
+        padding-right:4% ;
+        justify-content: space-between;
+    }
+    #flash button{
+        width: 17%;
+        margin-left:40%;
+        border-radius: 3%;
+   }
+   .card{
+    width:13rem;
+   }
+}
+ @media only screen and (max-width: 690px) {
+    #header{
+        display: flex;
+        margin-left: 5%;
+        margin-bottom: 0%;
+    }
+    #head{
+        background-color: rgba(117, 216, 252, 0.765);
+    }
+    #header p{
+        margin-top: 0.6%;
+        margin-right: 0.5%;
+    }
+    i{
+        margin-top: 1.5%;
+        margin-right: 0.5%;
+    }
+    #block{
+        width: 80%;
+        padding-top: 6%;
+        padding-left: 5%;
+    }
+    #cards{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+    #flash button{
+        width: 21%;
+        margin-left:40%;
+        border-radius: 3%;
+   }
+   .card{
+    width:100%;
+    margin-bottom: 2%;
+   }
+   h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px rgb(82, 81, 81);
+    font-size: smaller;
+}
+} 
+@media only screen and (max-width: 500px) {
+    h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size:1.3rem;
+    }
+   #block h1{
+    font-size: 20px;
+   }
+    #block{
+        width: 80%;
+        padding-top: 6%;
+        padding-left: 5%;
+    }
+    #btn{
+        margin-top: 2%;
+        font-size: smaller;
+    }
+    #icons{
+        align-items: center;
+        margin-left: 40%;
+    }
+    #logo{
+        margin-left: 2%;
+        width: 60px;
+        height: 30px;
+    }
+    #footer{
+        background-color: rgba(90, 187, 222, 0.831);
+         margin-top: 3%;
+         padding-bottom: 0px;
+         margin-bottom: 0px;
+        }
+    #ftop{
+            margin-left: 2%;
+            margin-right: 2%;
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 5%;
+            border-bottom-color: aliceblue;
+            border-bottom-style: solid;
+        }
+    #footer li{
+            color: aliceblue;
+            font-size: smaller;
+        }
+        #cr{
+            background-color: rgba(17, 17, 62, 0.952);
+            color: white;
+            font-size: xx-small;
+            padding-bottom: 0.5%;
+            padding-top: 0.5%;
+            text-align: center;
+        }
+        /*-------------------------------FLASH----------------------------------*/
+        .flash{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRioV-S1Um_ueqJgrAd7ISzuowSsVurxHuvaw&usqp=CAU);
+            background-repeat: no-repeat;
+            background-position: relative;
+            background-size: cover;
+            width: 100%;
+        }
+        #flash h2{
+            color: whitesmoke;
+            text-align: center;
+            text-shadow: 4px 2px 4px #552ad4;
+        }
+        #flash p{
+            color: whitesmoke;
+            text-align: center;
+            font-size: 12px;
+        }
+        #inflash{
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 5%;
+            padding-top: 12%;
+        }
+        #flash button{
+             width:25%;
+             margin-left:37%;
+             border-radius: 3%;
+             font-size: small;
+        }
+        #icons{
+            align-items: center;
+            margin-left: 40%;
+        }
+        #header{
+            display: none;
+        }
+}
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <div id="header">
+            <i class="fa-solid fa-phone"></i>
+            <p>+123 223 444 666</p>
+            <i class="fa-solid fa-envelope"></i>
+            <p>info@gmail.com</p>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="https://meyersgroup.net/wp-content/uploads/2016/12/dummy-logo-300x140.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Limited Offer</a></li>
+                            <li><a class="dropdown-item" href="#">Free updates</a></li>
+                            <li><a class="dropdown-item" href="#">More</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="img">
+        <div id="block">
+            <h1>We provide best service</h1>
+            <div id="btn">
+                <button>Know more</button>
+            </div>
+        </div>
+    </div>
+    <div id="cards">
+        <div class="card">
+            <img src="https://www.logomoose.com/wp-content/uploads/2016/08/Untitled-2.jpg" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Modern Design</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn btn-primary">More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2021/10/responsive-web-design-1-61f01c4b64c5f-sej.png"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Responsive 100%</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn btn-primary">More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwiiP0dhJ1O332LkC3srl8j5rDgF9b1T-E1A&usqp=CAU"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Free Updates</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn btn-primary">More</a>
+            </div>
+        </div>
+    </div>
+    <div id="flash" class="flash">
+        <div id="inflash">
+            <h2>Host your website for free!!</h2>
+            <div id="flashp">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
+            </div>
+            <button>HOST NOW</button>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="ftop">
+            <div>
+                <ul>
+                    <li class="top">ABOUT US</li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Corporate Enquiry</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="top">INFORMATION</li>
+                    <li><a>Terms and conditions</a></li>
+                    <li><a>Privacy Policy</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="top">CUSTOMER CARE</li>
+                    <li>Phone: +123 223 444 666</li>
+                    <li>Email:info@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div id="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div id="cr">
+            Copyright@2022||Designed by Your company name
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a33b8d9796.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
